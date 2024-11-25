@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://via.placeholder.com/1500') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+header {
+    background: rgba(180, 225, 254, 0.8);
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style:   
+    none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+section {
+    padding: 20px;
+    background: rgba(53, 66, 74, 0.7);
+    margin: 20px;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(53, 66, 74, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
