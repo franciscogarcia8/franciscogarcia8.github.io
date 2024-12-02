@@ -11,18 +11,23 @@
         <h1>Mi Página Web de Francisco Jose Garcia Zarco</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#acerca-de">Acerca de</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#acerca-de" class="nav-link">Acerca de</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Explora nuestros servicios y descubre cómo podemos ayudarte.</p>
+        </section>
+
         <section id="acerca-de">
             <h2>Acerca de Nosotros</h2>
-            <p>Somos la mejor empresa contrar nuestros servicio ya!!!</p>
+            <p>Somos una empresa dedicada a ofrecer soluciones digitales innovadoras. ¡Contrata nuestros servicios ya!</p>
         </section>
 
         <section id="servicios">
@@ -36,20 +41,23 @@
 
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <form>
+            <form id="contactForm">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
+            <p id="successMessage" style="display: none; color: green;">¡Gracias por tu mensaje!</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Mi Página Web</p>
     </footer>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
