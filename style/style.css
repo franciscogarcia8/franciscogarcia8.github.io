@@ -1,16 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y legible */
     margin: 0;
     padding: 0;
-    background-size: cover;
-    color: white;
-    background-color: lightgray;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333;
 }
+
 header {
-    background: rgba(180, 225, 254, 0.8);
-    margin: 0%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
 }
 nav {
     margin: 20px 0;
