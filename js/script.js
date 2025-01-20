@@ -1,29 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
+document.addEventListener('DOMContentLoaded', function() {
+    // Código para ejecutar cuando el DOM esté completamente cargado
 
-    // Cambiar fondo según la hora del día
-    const hour = new Date().getHours();
-    if (hour >= 6 && hour < 18) {
-        document.body.style.backgroundColor = '#dff9fb';
-    } else {
-        document.body.style.backgroundColor = '#2c3e50';
-        document.body.style.color = '#ecf0f1';
+    // Ejemplo de función para cambiar el contenido de un elemento
+    function cambiarContenido() {
+        document.getElementById('miElemento').innerText = 'Nuevo contenido';
     }
 
-    // Resaltar la sección activa
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(nav => nav.classList.remove('nav-active'));
-            link.classList.add('nav-active');
-        });
-    });
+    // Ejemplo de función para mostrar una alerta
+    function mostrarAlerta() {
+        alert('¡Hola! Esta es una alerta.');
+    }
 
-    // Validar formulario y mostrar mensaje
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        successMessage.style.display = 'block';
-        form.reset();
-    });
+    // Asignar eventos a botones
+    document.getElementById('botonCambiar').addEventListener('click', cambiarContenido);
+    document.getElementById('botonAlerta').addEventListener('click', mostrarAlerta);
 });
+// Ejemplo de función para cambiar el color de fondo
+function cambiarColorFondo() {
+    document.body.style.backgroundColor = 'lightblue';
+}
+
+// Ejemplo de función para ocultar un elemento
+function ocultarElemento() {
+    document.getElementById('miElemento').style.display = 'none';
+}
+
+// Ejemplo de función para mostrar un elemento oculto
+function mostrarElemento() {
+    document.getElementById('miElemento').style.display = 'block';
+}
+
+// Asignar eventos a nuevos botones
+document.getElementById('botonColor').addEventListener('click', cambiarColorFondo);
+document.getElementById('botonOcultar').addEventListener('click', ocultarElemento);
+document.getElementById('botonMostrar').addEventListener('click', mostrarElemento);
