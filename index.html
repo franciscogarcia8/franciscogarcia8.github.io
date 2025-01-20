@@ -1,78 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Curso de ChatGPT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
-<body>
-    <header>
-        <h1>Mi Página Web de Francisco Jose Garcia Zarco</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#acerca-de" class="nav-link">Acerca de</a></li>
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
+
+<body class="bg-color3 text-gray-800">
+    <!-- Header -->
+    <header class="bg-color1 text-color5 py-6 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-3xl font-bold">Curso de ChatGPT 🤖</h1>
+            <a href="https://tuweb.com" target="_blank"
+                class="mt-4 md:mt-0 bg-color4 text-color5 py-2 px-6 rounded-lg shadow-lg">¡Empieza ahora! 🚀</a>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Bienvenido</h2>
-            <p>Explora nuestros servicios y descubre cómo podemos ayudarte.</p>
-        </section>
+    <!-- Que vas a aprender -->
+    <section class="py-12 px-8 bg-color3">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 text-color1">¿Qué vas a aprender? 📘</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-lg rounded-lg border">
+                    <h3 class="text-xl font-semibold mb-4 text-color1">Domina ChatGPT</h3>
+                    <p>Aprenderás cómo usar ChatGPT de manera efectiva y creativa.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg border">
+                    <h3 class="text-xl font-semibold mb-4 text-color1">Automatiza Tareas</h3>
+                    <p>Descubre cómo automatizar tareas repetitivas con inteligencia artificial.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg border">
+                    <h3 class="text-xl font-semibold mb-4 text-color1">Crea Contenidos</h3>
+                    <p>Genera textos, ideas y más con la ayuda de ChatGPT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="acerca-de">
-            <h2>Acerca de Nosotros</h2>
-            <p>Somos una empresa dedicada a ofrecer soluciones digitales innovadoras. ¡Contrata nuestros servicios ya!</p>
-        </section>
+    <!-- Quien lo enseña -->
+    <section class="py-12 px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div class="flex justify-center">
+                <img src="gato_siames.jpg" alt="Profesor" class="rounded-full w-48 h-48 shadow-lg">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-color1 mb-4">¿Quién enseña el curso? 👨‍🏫</h2>
+                <p>El curso es impartido por un experto en inteligencia artificial con años de experiencia ayudando a
+                    personas a usar ChatGPT de manera efectiva y creativa.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li>Diseño web</li>
-                <li>Desarrollo web</li>
-                <li>Marketing digital</li>
-            </ul>
-        </section>
+    <!-- Temario del curso -->
+    <section class="py-12 px-8 bg-color3">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 text-color1">Preguntas frecuentes ❓</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-color3 p-6 shadow-lg rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold mb-2 text-color1">¿Cuánto dura el curso?</h3>
+                    <p>El curso tiene una duración aproximada de 10 horas divididas en módulos.</p>
+                </div>
+                <div class="bg-color3 p-6 shadow-lg rounded-lg border border-gray-200">
+                    <h3 class="text-lg font-semibold mb-2 text-color1">¿Necesito experiencia previa?</h3>
+                    <p>No, el curso está diseñado para principiantes y avanzados.</p>
+                </div>
+            </div>
+    </section>
 
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <form id="contactForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="successMessage" style="display: none; color: green;">¡Gracias por tu mensaje!</p>
-        </section>
-    </main>
+    <!-- Preguntas frecuentes -->
+    <section class="py-12 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 text-color1">Preguntas frecuentes ❓</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-color3 p-6 shadow-lg rounded-lg border">
+                    <h3 class="text-lg font-semibold mb-2 text-color1">¿Cuánto dura el curso?</h3>
+                    <p>El curso tiene una duración aproximada de 10 horas divididas en módulos.</p>
+                </div>
+                <div class="bg-color3 p-6 shadow-lg rounded-lg border">
+                    <h3 class="text-lg font-semibold mb-2 text-color1">¿Necesito experiencia previa?</h3>
+                    <p>No, el curso está diseñado para principiantes y avanzados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Mi Página Web</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank" class="social-link">
-                <img src="./icons/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" class="social-link">
-                <img src="./icons/twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-link">
-                <img src="./icons/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-link">
-                <img src="./icons/linkedin.svg" alt="LinkedIn">
-            </a>
+    <!-- Precio -->
+    <section class="py-12 px-8 bg-color3">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-2xl font-bold text-color1 mb-4">¡No te pierdas esta oportunidad! 💡</h2>
+                <p class="text-gray-700">Conviértete en un experto en ChatGPT y aprovecha todo su potencial.</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-lg border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-color1">Precio: $49.99</h3>
+                <ul class="mb-4">
+                    <li class="flex items-center mb-2"><span class="text-green-500 mr-2">✔</span> Acceso de por vida
+                    </li>
+                    <li class="flex items-center mb-2"><span class="text-green-500 mr-2">✔</span> Actualizaciones
+                        gratuitas</li>
+                    <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Certificado al completar
+                    </li>
+                </ul>
+                <a href="https://tuweb.com" target="_blank"
+                    class="bg-color4 text-color5 py-2 px-6 rounded-lg shadow-lg w-full text-center block hover:bg-red-600 transition duration-300">¡Comprar
+                    ahora!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer class="py-12 px-8 bg-color1 text-color5">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="mb-4">¿Tienes alguna duda? Escríbenos 📩</p>
+            <a href="mailto:contacto@tuweb.com"
+                class="bg-color4 text-color5 py-2 px-6 rounded-lg shadow-lg hover:bg-red-600 transition duration-300">Contáctanos</a>
         </div>
     </footer>
-    
-
-    <script src="./script/script.js"></script>
 </body>
+
 </html>
