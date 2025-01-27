@@ -48,6 +48,38 @@ footer {
     color: white;
 }
 
+/* Gradients */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-blue-500 {
+    --tw-gradient-from: #4299e1;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(66, 153, 225, 0));
+}
+
+.to-purple-600 {
+    --tw-gradient-to: #805ad5;
+}
+
+.from-green-400 {
+    --tw-gradient-from: #48bb78;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(72, 187, 120, 0));
+}
+
+.to-blue-500 {
+    --tw-gradient-to: #4299e1;
+}
+
+.from-purple-500 {
+    --tw-gradient-from: #9f7aea;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(159, 122, 234, 0));
+}
+
+.to-pink-500 {
+    --tw-gradient-to: #ed64a6;
+}
+
 /* Transitions */
 .transition {
     transition: all 0.3s ease-in-out;
