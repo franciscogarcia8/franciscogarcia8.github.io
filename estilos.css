@@ -95,10 +95,11 @@ footer {
 
 /* Header Styles */
 header {
-    background-color: #0086e8; /* color1 */
+    background: linear-gradient(to right, #4299e1, #805ad5); /* Gradiente igual al del menú */
     color: white; /* color5 */
     text-align: center;
     padding: 20px 0;
+    margin-top: 60px; /* Espacio para el menú fijo */
 }
 
 /* Section Styles */
@@ -151,7 +152,7 @@ img.rounded-full {
 
 /* Navigation Menu Styles */
 nav {
-    background-color: #0086e8; /* color1 */
+    background: linear-gradient(to right, #4299e1, #805ad5); /* Gradiente igual al header */
     color: white; /* color5 */
     padding: 20px 0;
     position: fixed;
