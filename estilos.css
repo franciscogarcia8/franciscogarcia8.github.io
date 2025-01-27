@@ -45,46 +45,74 @@ footer {
 }
 
 .bg-color5 {
-    background-color: #ffffff;
+    color: white;
 }
 
-.text-color1 {
-    color: #0086e8;
+/* Transitions */
+.transition {
+    transition: all 0.3s ease-in-out;
 }
 
-.text-color2 {
-    color: #21abfb;
-}
-
-.text-color3 {
-    color: #f1f1f1;
-}
-
-.text-color4 {
-    color: #ff0f0e;
-}
-
-.text-color5 {
-    color: #ffffff;
-}
-
-.shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.rounded-lg {
-    border-radius: 0.5rem;
-}
-
-.border {
-    border-width: 1px;
-    border-color: #e2e8f0;
+.hover\:scale-105:hover {
+    transform: scale(1.05);
 }
 
 .hover\:bg-red-600:hover {
-    background-color: #e53e3e;
+    background-color: #e60000;
 }
 
-.transition {
-    transition: all 0.3s ease-in-out;
+/* Header Styles */
+header {
+    background-color: #0086e8; /* color1 */
+    color: white; /* color5 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+}
+
+section.bg-color3 {
+    background-color: #f1f1f1;
+}
+
+section.bg-white {
+    background-color: white;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styles */
+button {
+    background-color: #ff0f0e; /* color4 */
+    color: white; /* color5 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* Image Styles */
+img.rounded-full {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
